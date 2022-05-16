@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background-color: #3f444e;
+}
+
+.w {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.downpx{
+  transform: translateY(9px);
+  transition: all .5s ;
+}
+
+/* header */
+.header {
+  position: relative;
+  height: 110px;
+  background-color: #ffffff;
+  margin-top: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+  .logo{
+    width: 115px;
+    height: 15px;
+    margin: 35px 0 0 33px;
+  }
+  ul{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 28px;
+    left: 50%;
+    transform: translatex(-165px);
+    width: 330px;
+    height: 30px;
+    li:nth-child(2) a{
+     background-position: -52px -8px;
+    }
+    li:nth-child(3) a{
+      background-position: -95px -8px;
+     }
+     li:nth-child(4) a{
+      background-position: -134px -8px;
+     }
+     li:nth-child(5) a{
+      background-position: -180px -8px;
+     }
+     li:nth-child(6) a{
+      background-position: -222px -8px;
+     }
+     
+    a{
+      display: block;
+      height: 40px;
+      width: 38px;
+      background: url("../img/img_sprite.png") -13px -8px ;
+    }
+    
+  }
+  .tags{
+    position: absolute;
+    top: 65px;
+    left: 377px;
+    height: 30px;
+    left: 52%;
+    transform: translatex(-188px);
+    ol{
+      position: relative;
+      li::after{
+       content: "";
+       border: 10px solid transparent;
+       border-bottom: 10px solid #d8232a;
+      position: absolute;
+      top: -20px;
+      left: 17px;
+      z-index: 999;
+      }
+      li{
+        display: none;
+        padding: 0 5px;      
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 5px;
+        float: left;
+        background-color: #d8232a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+       
+      }
+    }
+    
+    li:nth-child(1){
+      z-index: 9;
+    }
+    li:nth-child(2){
+      left: 52px;
+    }
+    li:nth-child(3){
+      left: 107px;
+    }
+    li:nth-child(4){
+      left: 163px;
+    }
+    li:nth-child(5){
+      left: 217px;
+    }
+    li:nth-child(6){
+      left: 272px;
+    }
+  }
+  .user{
+    position: absolute;
+    right: 45px;
+    top: 20px;
+    width: 145px;
+    height: 51px;    
+    a:nth-child(2){
+      margin-left: 5px;
+    }
+    a{
+      vertical-align: middle;
+    }
+  }
+}
