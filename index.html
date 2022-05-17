@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="./css/comment.css">
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
 </head>
 
 <body>
@@ -36,13 +40,125 @@
       <a href="">
         <img src="./img/p1.png" alt="" class="user_pic">
       </a>
-      <a href="">赵本山</a>
+      <a href="">赵本山本山</a>
       <span></span>
     </div>
   </div>
-  <div class="banner"></div>
-  <div class="content"></div>
-  <div class="footer"></div>
+  <div class="banner w">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/banner.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banner1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banner2.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <button class="watch">点击观影</button>
+    </div>
+  </div>
+  <div class="content w">
+    <div class="hot_movie">热门电影</div>
+    <div class="box">
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+
+
+
+      <div class="c_box">
+        <div class="m_msg">
+          <p>杀手</p>
+          <p><span class="iconfont icon-like"></span>239.7K</p>
+          <p><span class="iconfont icon-pinglun"></span>29.7K</p>
+          <p><span class="iconfont icon-share"></span>129.7K</p>
+          <p>更新时间:2022.05.17</p>
+        </div>
+        <img src="./img/pic1.jpg" alt="">
+      </div>
+
+
+      <div class="r_box">
+        <img src="./img/pic4.jpg" alt="">
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+      <div class="c_box">
+        <div class="m_msg">
+          <p>杀手</p>
+          <p><span class="iconfont icon-like"></span>239.7K</p>
+          <p><span class="iconfont icon-pinglun"></span>29.7K</p>
+          <p><span class="iconfont icon-share"></span>129.7K</p>
+          <p>更新时间:2022.05.17</p>
+        </div>
+        <img src="./img/pic1.jpg" alt="">
+      </div>
+      <div class="r_box">
+        <img src="./img/pic4.jpg" alt="">
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+      <div class="s_box">
+        <img src="./img/pic1.jpg" alt="">
+        <p>豆瓣评分:7.8</p>
+        <p>这个杀手不太冷静</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer w">
+    <img src="./img2/10.jpg" alt="">
+    <div class="tianchong"></div>
+  </div>
+
+
+  <!-- swiper -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>
