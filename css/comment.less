@@ -145,8 +145,13 @@ body {
 // footer
 @keyframes move
 {
-    50%{top:0}
+    50%{top:25%}
     100%{top:50%}
+}
+@keyframes text
+{
+    50%{width: 0;}
+    100%{width: 350px;}
 }
 
 .footer{
@@ -155,15 +160,30 @@ body {
   margin: 130px auto;
   height: 300px;
   background-color: #262c38;
+  border-radius: 10px;
+  p{
+    height: 70px;
+    font-size: 50px;
+    float: right;
+    color: #fff;
+    margin-top: 3%;
+    margin-right: 28%;
+    overflow: hidden;
+    animation: text 3s steps(7) infinite;
+  }
   img{
+    margin-left: 21%;
     position: absolute;
     top: 50%;
     transform: translateY(-100px);
     width: 100px;
     height: 100px;
+    cursor: pointer;
     border-radius: 50%;
-    transition: all 2s;
-    animation: move 2s linear 0 infinite;
+    animation: move 1s linear  infinite;
+  }
+  img:hover{
+    animation-play-state:paused;
   }
   .tianchong{
     position: absolute;
