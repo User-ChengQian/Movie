@@ -15,6 +15,22 @@ body {
 
 body {
   background-color: #3f444e!important;
+  position: relative;
+  .tips{
+    opacity: 0;
+    z-index: 9999;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-200px);
+    border-radius: 20px;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: green;
+    font-size: 25px;
+  }
 }
 
 .w {
@@ -33,6 +49,7 @@ body {
   margin-top: 70px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
+  padding-bottom: 10px;
   .logo{
     width: 115px;
     height: 30px;
@@ -47,6 +64,7 @@ body {
     left: 50%;
     transform: translatex(-165px);
     width: 330px;
+  
     // li{
     //   height: 23px;
     //   border: 1px solid red;
@@ -69,15 +87,16 @@ body {
      
     a{
       display: block;
-      height: 30px;
+      height: 24px;
       width: 30px;
       background: url("../img/img_sprite.png") -13px -11px ;
+      z-index: 9999999999999999;
     }
     
   }
   .tags{
     position: absolute;
-    top: 65px;
+    top: 66px;
     // left: 452px;
     height: 30px;
     left: 52%;
@@ -86,10 +105,10 @@ body {
       position: relative;
       li::after{
        content: "";
-       border: 10px solid transparent;
-       border-bottom: 10px solid #d8232a;
+       border: 7px solid transparent;
+       border-bottom: 7px solid #d8232a;
       position: absolute;
-      top: -20px;
+      top: -14px;
       left: 17px;
       }
       li{
@@ -103,7 +122,7 @@ body {
         float: left;
         background-color: #d8232a;
         position: absolute;
-        top: 3px;
+        top: 0px;
         left: 0;
         font-size: 12px;
       }
@@ -133,7 +152,11 @@ body {
     right: 45px;
     top: 20px;
     width: 145px;
-    height: 51px;    
+    height: 51px; 
+    img{
+      width: 30%;
+      border-radius: 50%;
+    }   
     a:nth-child(2){
       margin-left: 5px;
     }

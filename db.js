@@ -1,0 +1,11 @@
+[{id:1,name:"这个杀手不太冷静",url:"https://v.qq.com/x/cover/mzc002009e5o3hm.html",pic_path:"1.png",updata:"2022.06.01",value:"7.8",loves:8435,com:325,share:854},
+{id:2,name:"奇迹·笨小孩",url:"https://v.qq.com/x/cover/mzc002001uvqi5d.html",pic_path:"2.png",updata:"2022.09.24",value:"8.7",loves:15134,com:2356,share:23424},
+{id:3,name:"狙击手",url:"https://v.qq.com/x/cover/mzc0020035l5vcf.html",pic_path:"3.png",updata:"2022.01.12",value:"6.8",loves:45364,com:2523,share:7233},
+{id:4,name:"发财日记 ",url:"https://v.qq.com/x/cover/mzc00200fw94jce.html",pic_path:"4.png",updata:"2021.02.01",value:"6.6",loves:34511,com:634,share:6853},
+{id:5,name:"失控玩家",url:"https://v.qq.com/x/cover/mzc00200jfxbn41.html",pic_path:"5.png",updata:"2021.11.03",value:"9.0",loves:28361,com:3476,share:6234},
+{id:6,name:"金刚大战哥斯拉",url:"https://www.iqiyi.com/v_w5rcwjklnw.html",pic_path:"6.png",updata:"2020.12.18",value:"9.8",loves:96854,com:2343,share:523},
+{id:7,name:"长津湖",url:"https://www.iqiyi.com/v_pzqg2653vk.html",pic_path:"7.png",updata:"2022.12.08",value:"9.7",loves:56733,com:634,share:2473},
+{id:8,name:"我的姐姐",url:"https://www.iqiyi.com/v_1m9faijoags.html",pic_path:"8.png",updata:"2021.12.15",value:"8.7",loves:35774,com:3271,share:1},
+{id:9,name:"误杀2",url:"https://www.iqiyi.com/v_13pwkzhy5n0.html",pic_path:"9.png",updata:"2022.05.03",value:"8.6",loves:23685,com:6164,share:61463},
+{id:10,name:"铁道英雄",url:"https://www.iqiyi.com/v_1i08ut58uec.html",pic_path:"10.png",updata:"2021.12.31",value:"8.9",loves:32463,com:13416,share:8423},
+]
