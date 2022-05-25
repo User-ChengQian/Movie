@@ -36,25 +36,10 @@ body .header .user {
 body .main {
   padding: 0 200px;
 }
-body .main .watch:hover p {
-  display: block;
-}
 body .main .watch {
   position: relative;
   width: 100%;
   height: 80%;
-}
-body .main .watch p {
-  padding-left: 50px;
-  display: none;
-  width: 80%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 50px;
-  color: #fff;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 body .main .watch video {
   width: 100%;
