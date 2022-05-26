@@ -4,31 +4,53 @@
 }
 body {
   min-width: 1200px;
-  background-color: #3f444e;
+  background-color: #6a6a6a;
 }
 body .header {
-  height: 50px;
-  line-height: 50px;
-  background-color: skyblue;
+  min-width: 1000px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #fff;
   padding: 0 200px;
 }
 body .header div {
   float: left;
 }
 body .header .logo {
-  width: 200px;
-  background-color: red;
+  width: 139px;
+  height: 67px;
+  margin-right: 69px;
+  cursor: pointer;
 }
-body .header .nav {
-  width: 250px;
-  background-color: pink;
-}
-body .header .nav li {
-  float: left;
-  list-style: none;
+body .header .logo img {
+  width: 100%;
 }
 body .header .search {
-  margin-left: 10px;
+  display: flex;
+  margin: 12px 0  0 20px;
+  border: 1px solid #6a6a6a;
+  width: 600px;
+  line-height: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+body .header .search .parse {
+  flex: 9;
+  height: 40px;
+  width: 90%;
+  padding-left: 30px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+body .header .search button {
+  flex: 2;
+  border: none;
+  cursor: pointer;
+  background-color: #fc5531;
+  color: #fff;
 }
 body .header .user {
   float: right;
@@ -43,4 +65,44 @@ body .main .watch {
 }
 body .main .watch video {
   width: 100%;
+}
+body .vweb {
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: gainsboro;
+  height: 300px;
+  width: 80%;
+}
+body .vweb p {
+  padding: 20px 40px;
+}
+body .vweb p span {
+  float: right;
+  margin-right: 60px;
+  color: red;
+  font-size: 12px;
+}
+body .vweb .box ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+body .vweb .box ul li {
+  box-sizing: border-box;
+  margin: 10px 10px 0 0 ;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+body .vweb .box ul li img {
+  width: 100%;
+}
+body .vweb .box ul li:hover {
+  border: 1px solid purple;
+  display: inline-block;
+  margin: 0 0;
+  animation: tada;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+  /* don't forget to set a duration! */
 }

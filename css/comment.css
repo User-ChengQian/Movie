@@ -44,16 +44,15 @@ body .banner {
   max-width: 1100px;
   position: relative;
   height: 110px;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   margin-top: 70px;
   border-radius: 5px 5px 0 0;
-  overflow: hidden;
   padding-bottom: 10px;
 }
 .header .logo {
-  width: 115px;
-  height: 30px;
-  margin: 27px 0 0 33px;
+  width: 210px;
+  height: 100px;
+  margin: 15px 0 0 33px;
 }
 .header ul {
   position: absolute;
@@ -137,6 +136,16 @@ body .banner {
 .header .tags li:nth-child(6) {
   left: 272px;
 }
+.header .user::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-bottom: 75px solid #d8232a;
+  position: absolute;
+  top: -14px;
+  left: 17px;
+  z-index: 999999999999999999999;
+}
 .header .user {
   position: absolute;
   right: 45px;
@@ -145,6 +154,7 @@ body .banner {
   height: 51px;
 }
 .header .user img {
+  position: relative;
   width: 30%;
   border-radius: 50%;
 }

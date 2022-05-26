@@ -5,38 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>请不起UI的电影之家</title>
   <link rel="stylesheet" href="./css/movie.css">
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="./js/movie.js"></script>
   <script src="./db.js"></script>
-</head>
+  <script src="./js/movie.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 <body>
   <div class="header">
-    <div class="logo">
-      <img src="" alt="">
+    <div class="logo" title="回到首页">
+      <img src="./src/img/logo.jpg" alt="">
     </div>
-    <div class="nav">
-      <ul>
-        <li></li>
-        <a href="">精选</a>
-        <li></li>
-        <a href="">电视剧</a>
-        <li></li>
-        <a href="">电影</a>
-        <li></li>
-        <a href="">综艺</a>
-        <li></li>
-        <a href="">动漫</a>
-      </ul>
-    </div>
+
     <div class="search">
-      <input type="text" placeholder="暂未开发^V^" disabled>
-      <button disabled>搜索</button>
+      <input class="parse info_value" type="text" placeholder="请输入视频url链接^V^">
+      <button class="btn_parse">解析</button>
     </div>
-    <div class="user">
-      头像
+    <div class="parse_road">
+      <button title="默认线路一,点击线路再进行解析即可">切换线路二</button>
     </div>
 
   </div>
@@ -45,13 +32,32 @@
       <div id="ckplays">
         <iframe id="jiekou" name="jiekou" width="100%" height="600px" allowfullscreen="true"
           webkitallowfullscreen="true" mozallowfullscreen="true" style="background-color:#000;" frameborder="0"
-          src="https://svip.bljiex.cc/?v=https://v.qq.com/x/cover/mzc002009e5o3hm/b0042z5yzlo.html"></iframe>
+          src=""></iframe>
       </div>
     </div>
   </div>
-  <div class="back">
-    <button>回到首页</button>
+  <div class="vweb w" onclick="">
+    <p>支持网站<span>ps:复制你想看视频的url链接,然后放入顶部输入框中解析即可</span></p>
+    <div class="box">
+      <ul>
+        <li><img src="./src/video_logo/1.png" alt=""></li>
+      </ul>
+    </div>
   </div>
+  <script>
+    // 初始化
+    function changeSrc() {
+      var furl = null
+      var id = localStorage.getItem("id")
+      arr.forEach(item => {
+        if (item.id == id) {
+          furl = item.url
+        }
+      });
+      document.getElementById("jiekou").src = "https://jx.xmflv.com/?url=" + `${furl}`;
+    }
+    changeSrc()
+  </script>
 </body>
 
 </html>

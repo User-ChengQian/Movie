@@ -11,3 +11,16 @@
 {id:10,name:"铁道英雄",url:"https://www.iqiyi.com/v_1i08ut58uec.html",pic_path:"10.png",update:"2021.12.31",value:"8.9",loves:32463,com:13416,share:8423,size:1},
 {id:11,name:"你的婚礼",url:"https://www.iqiyi.com/v_19rxkql7qk.html",pic_path:"11.png",update:"2020.05.13",value:"10.0",loves:991314,com:13816,share:55655,size:2}
 ]
+
+var arr2=[
+  {id:1,url:"https://v.qq.com/"},
+  {id:2,url:"https://www.iqiyi.com/"},
+  {id:3,url:"https://vip.1905.com/"},
+  {id:4,url:"https://www.bilibili.com/"},
+  {id:5,url:"https://hy.youku.com/"},
+  {id:6,url:"https://www.tudou.com/"},
+  {id:7,url:"http://www.fun.tv/"},
+  {id:8,url:"https://www.mgtv.com/"},
+  {id:9,url:"http://www.le.com/"},
+  {id:10,url:"http://vip.pptv.com/"},
+]
