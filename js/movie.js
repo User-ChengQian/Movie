@@ -1,10 +1,13 @@
 $(function(){
+  // 跳转首页
   $(".logo").click(function(){
       location.href="./index.html"
   })
+  // 切换解析路径逻辑
   $(".btn_parse").click(function(){
-    var info = $(".search .info_value").val()
-    document.getElementById("jiekou").src = "https://jx.xmflv.com/?url=" + `${info}`;
+    furl = $(".search .info_value").val()
+    document.getElementById("jiekou").src = path + `${furl}`;
+    $(".parse").val("")
   })
    // 渲染box,影视logo
    var str = ""
@@ -18,5 +21,25 @@ $(function(){
    $(".box ul li").on("click", function () {
      window.open($(this).attr("data-url"))
    })
+  //  文本框逻辑
+   $(".xzmsg").click(function(){
+     $(this).css("display","none")
+   })
+   $(".delete").click(function(){
+    $(".parse").val("").focus()
+     $(this).css("display","none")
+   })
+   $(".search .parse").on("keydown",function(e){
+     if(e.keyCode==8){
+       $(this).val("")
+     }
+    if($(".parse").val()){
+      $(".delete").css("display","block")
+      }
+    else{
+      $(".delete").css("display","none")
+      }
+   })
+
 
 })

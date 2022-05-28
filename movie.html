@@ -11,19 +11,28 @@
   <script src="./db.js"></script>
   <script src="./js/movie.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font -->
+  <link rel="stylesheet" href="./css/iconfont.css">
 
 <body>
+  <span class="xzmsg">请你看小猪佩奇,不错吧^_^</span>
   <div class="header">
     <div class="logo" title="回到首页">
-      <img src="./src/img/logo.jpg" alt="">
+      <span class="iconfont icon-home"></span>
     </div>
 
     <div class="search">
       <input class="parse info_value" type="text" placeholder="请输入视频url链接^V^">
+      <span class="iconfont icon-false delete"></span>
       <button class="btn_parse">解析</button>
     </div>
     <div class="parse_road">
-      <button title="默认线路一,点击线路再进行解析即可">切换线路二</button>
+      <!-- <button title="默认线路一,点击线路再进行解析即可">切换线路二</button> -->
+      <select class="select">
+        <option value="1">线路一</option>
+        <option value="2">线路二</option>
+        <option value="3">线路三</option>
+      </select>
     </div>
 
   </div>
@@ -31,13 +40,13 @@
     <div class="watch">
       <div id="ckplays">
         <iframe id="jiekou" name="jiekou" width="100%" height="600px" allowfullscreen="true"
-          webkitallowfullscreen="true" mozallowfullscreen="true" style="background-color:#000;" frameborder="0"
-          src=""></iframe>
+          webkitallowfullscreen="true" mozallowfullscreen="true" style="background-color:#000; margin-top: 50px;"
+          frameborder="0" src=""></iframe>
       </div>
     </div>
   </div>
   <div class="vweb w" onclick="">
-    <p>支持网站<span>ps:复制你想看视频的url链接,然后放入顶部输入框中解析即可</span></p>
+    <p>支持网站<i>功能:免广告和解析vip视频</i><span>ps:复制你想看视频的url链接,然后放入顶部输入框中解析即可(解析失败需切换路线--共3个)</span></p>
     <div class="box">
       <ul>
         <li><img src="./src/video_logo/1.png" alt=""></li>
@@ -46,17 +55,71 @@
   </div>
   <script>
     // 初始化
+    // 实现token效果
+    function loading() {
+      document.getElementById("jiekou").src = path + `${furl}`;
+    }
+    var path2 = sessionStorage.getItem("parth_path1")
+    if (!path2) {
+      location.href = "./index.html"
+    }
+    var path1 = sessionStorage.getItem("parth_path2")
+    var path3 = sessionStorage.getItem("parth_path3")
+    var path = path1
+    var furl = null
     function changeSrc() {
-      var furl = null
-      var id = localStorage.getItem("id")
-      arr.forEach(item => {
-        if (item.id == id) {
-          furl = item.url
-        }
-      });
-      document.getElementById("jiekou").src = "https://jx.xmflv.com/?url=" + `${furl}`;
+      furl = sessionStorage.getItem("pig")
+      if (furl) {
+        sessionStorage.removeItem("id");
+        $(".xzmsg").css("display", "block")
+      }
+      else {
+        var id = sessionStorage.getItem("id")
+        arr.forEach(item => {
+          if (item.id == id) {
+            furl = item.url
+          }
+        });
+      }
+      document.getElementById("jiekou").src = path + `${furl}`;
+      sessionStorage.removeItem("pig");
     }
     changeSrc()
+
+    // 线路切换+防抖
+    // 下拉列表存储读取
+    var flag = localStorage.getItem("flag") || 1
+    $(".select").val(flag)
+    $(".select").on("change", function () {
+      flag = $(this).val()
+      localStorage.setItem("flag", flag)
+      if (flag == 1) {
+        path = path2
+      } else if (flag == 2) {
+        path = path3
+      } else {
+        path = path1
+      }
+      loading()
+    })
+
+
+    // $(".parse_road button").click(function () {
+    //   if (disbtn) {
+
+    //     disbtn = false
+    //   } else {
+    //     alert("请勿点击过快,3秒后解锁")
+    //     $(this).attr({ "disabled": "disabled" })
+    //     const This = this
+    //     setTimeout(function () {
+    //       disbtn = true
+    //       $(This).removeAttr("disabled")
+    //     }, 3000)
+    //   }
+
+
+    // })
   </script>
 </body>
 

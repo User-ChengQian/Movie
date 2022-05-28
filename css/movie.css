@@ -6,39 +6,73 @@ body {
   min-width: 1200px;
   background-color: #6a6a6a;
 }
+body .xzmsg {
+  cursor: pointer;
+  display: none;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  top: 120px;
+  left: 30px;
+  color: #fff;
+  background-color: red;
+  z-index: 999;
+}
 body .header {
   min-width: 1000px;
   height: 70px;
   line-height: 70px;
   background-color: #fff;
   padding: 0 200px;
+  display: flex;
 }
 body .header div {
   float: left;
 }
 body .header .logo {
-  width: 139px;
-  height: 67px;
-  margin-right: 69px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 158px;
   cursor: pointer;
 }
-body .header .logo img {
-  width: 100%;
+body .header .logo span:hover {
+  font-size: 60px;
+}
+body .header .logo span {
+  transition: all 0.5s;
+  font-size: 50px;
 }
 body .header .search {
+  flex: 1;
   display: flex;
+  height: 40px;
   margin: 12px 0  0 20px;
   border: 1px solid #6a6a6a;
   width: 600px;
   line-height: 30px;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
+}
+body .header .search .delete {
+  display: none;
+  position: absolute;
+  left: 79%;
+  top: 0;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 body .header .search .parse {
   flex: 9;
   height: 40px;
   width: 90%;
-  padding-left: 30px;
+  padding: 0 40px;
   outline: none;
   border: none;
   font-size: 20px;
@@ -52,10 +86,24 @@ body .header .search button {
   background-color: #fc5531;
   color: #fff;
 }
+body .header .parse_road {
+  float: right;
+}
+body .header .parse_road select {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: all 0.5s;
+  margin-left: 250px;
+  font-size: 20px;
+  padding-left: 5px;
+}
 body .header .user {
   float: right;
 }
 body .main {
+  min-width: 1200px;
   padding: 0 200px;
 }
 body .main .watch {
@@ -68,7 +116,7 @@ body .main .watch video {
 }
 body .vweb {
   border-radius: 10px;
-  max-width: 1200px;
+  min-width: 1200px;
   margin: 40px auto;
   background-color: gainsboro;
   height: 300px;
@@ -77,9 +125,13 @@ body .vweb {
 body .vweb p {
   padding: 20px 40px;
 }
+body .vweb p i {
+  margin-left: 180px;
+  font-size: 30px;
+  color: red;
+}
 body .vweb p span {
-  float: right;
-  margin-right: 60px;
+  margin-left: 10px;
   color: red;
   font-size: 12px;
 }
@@ -87,22 +139,21 @@ body .vweb .box ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-around;
 }
 body .vweb .box ul li {
-  box-sizing: border-box;
   margin: 10px 10px 0 0 ;
-  padding: 20px 40px;
+  padding: 20px 39px;
   cursor: pointer;
 }
 body .vweb .box ul li img {
+  border: 1px solid transparent;
   width: 100%;
 }
-body .vweb .box ul li:hover {
+body .vweb .box ul li:hover img {
   border: 1px solid purple;
   display: inline-block;
   margin: 0 0;
   animation: tada;
-  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s;
-  /* don't forget to set a duration! */
 }

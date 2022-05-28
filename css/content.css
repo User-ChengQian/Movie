@@ -62,7 +62,7 @@
   background-color: #ffffff;
 }
 .content .box .c_box .m_msg {
-  padding: 15px 0 0 15px;
+  padding: 2px 0 0 11px;
 }
 .content .box .c_box .m_msg p:nth-child(1) {
   color: red;
@@ -78,7 +78,7 @@
   padding-right: 15px;
 }
 .content .box .c_box .m_msg p:nth-child(5) {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 10px;
 }
 .content .box .c_box img {

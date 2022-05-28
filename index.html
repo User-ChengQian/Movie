@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>请不起UI的电影之家</title>
+  <!-- clock -->
+  <link rel="stylesheet" href="./css/clock_style.css">
+  <script src="./js/clock.js"></script>
   <!-- animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="./js/animate_function.js"></script>
@@ -20,9 +23,25 @@
   <link rel="stylesheet" href="./css/iconfont.css">
   <!-- data -->
   <script src="./db.js"></script>
+  <!-- icon -->
+  <!--可以在收藏夹中显示出图标-->
+  <link rel="Bookmark" type="image/png" href="./src/img/movie.png" />
+  <!--可以在地址栏中显示出图标-->
+  <link rel="icon" type="image/png" href="./src/img/movie.png" />
 </head>
 
 <body>
+  <div class="clock">
+    <span class="clock__digit">0</span>
+    <span class="clock__digit">0</span>
+    <span class="clock__digit">:</span>
+    <span class="clock__digit">0</span>
+    <span class="clock__digit">0</span>
+    <span class="clock__digit">:</span>
+    <span class="clock__digit">0</span>
+    <span class="clock__digit">0</span>
+  </div>
+
   <div class="tips">别急嘛,就快开发好啦</div>
   <div class="header w">
     <img src="./src/img/logo.jpg" alt="" class="logo">
@@ -48,21 +67,26 @@
       <a href="javascript:;">
         <img src="./src/banner_pic/my_pic.jpg" alt="" class="user_pic">
       </a>
-      <a href="javascript:;">哇哈哈</a>
-      <span></span>
+      <span href="javascript:;">哇哈哈</span>
+      <div class="detail">
+        <p>程qian</p>
+        <hr>
+        <img src="./src/img/wechat.jpg" alt="">
+        <span>微信扫呀扫</span>
+      </div>
     </div>
   </div>
   <div class="banner w">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./src/banner_pic/1b.png" alt="">
+          <img src="./src/banner_pic/1b.png" alt="" data_pic="1">
         </div>
         <div class="swiper-slide">
-          <img src="./src/banner_pic/b2.png" alt="">
+          <img src="./src/banner_pic/b2.png" alt="" data_pic="2">
         </div>
         <div class="swiper-slide">
-          <img src="./src/banner_pic/3b.png" alt="">
+          <img src="./src/banner_pic/3b.png" alt="" data_pic="3">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -155,9 +179,9 @@
     </div>
   </div>
   <div class="footer w">
-    <a href="tencent://message/?uin=2798245493&Site=&Menu=yes"><img src="./src/banner_pic/my_pic.jpg" alt=""
+    <a href="tencent://message/?uin=2870032794&Site=&Menu=yes"><img src="./src/banner_pic/my_pic.jpg" alt=""
         title="点击添加好友"></a>
-    <p>点我添加好友叭</p>
+    <p>点我添加好友哇</p>
     <div class="tianchong"></div>
   </div>
 
