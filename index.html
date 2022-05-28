@@ -1,3 +1,14 @@
+<!-- 
+
+
+
+完工时间2022.5.28日
+仅供学习,切勿盈利
+接口均来源于网络
+
+
+
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,23 +17,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>请不起UI的电影之家</title>
+  <!-- index.css -->
+  <link rel="stylesheet" href="./src/css/index.css">
   <!-- clock -->
-  <link rel="stylesheet" href="./css/clock_style.css">
-  <script src="./js/clock.js"></script>
+  <link rel="stylesheet" href="./src/css/clock_style.css">
+  <script src="./src/js/clock.js"></script>
   <!-- animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="./js/animate_function.js"></script>
-  <link rel="stylesheet" href="./css/comment.css">
+  <script src="./src/js/animate_function.js"></script>
+  <!-- jquery index -->
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./src/js/index.js"></script>
   <!-- swiper -->
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/swiper.css">
-  <link rel="stylesheet" href="./css/content.css">
+  <link rel="stylesheet" href="./src/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./src/css/swiper.css">
+  <script src="./src/js/swiper-bundle.min.js"></script>
   <!-- font -->
-  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./src/css/iconfont.css">
   <!-- data -->
-  <script src="./db.js"></script>
+  <script src="./src/js/db.js"></script>
   <!-- icon -->
   <!--可以在收藏夹中显示出图标-->
   <link rel="Bookmark" type="image/png" href="./src/img/movie.png" />
@@ -65,14 +78,14 @@
     </div>
     <div class="user">
       <a href="javascript:;">
-        <img src="./src/banner_pic/my_pic.jpg" alt="" class="user_pic">
+        <img src="./src/img/banner_pic/my_pic.jpg" alt="" class="user_pic">
       </a>
       <span href="javascript:;">哇哈哈</span>
       <div class="detail">
         <p>程qian</p>
         <hr>
         <img src="./src/img/wechat.jpg" alt="">
-        <span>微信扫呀扫</span>
+        <span>微信扫一扫</span>
       </div>
     </div>
   </div>
@@ -80,13 +93,13 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./src/banner_pic/1b.png" alt="" data_pic="1">
+          <img src="./src/img/banner_pic/1b.png" alt="" data_pic="1">
         </div>
         <div class="swiper-slide">
-          <img src="./src/banner_pic/b2.png" alt="" data_pic="2">
+          <img src="./src/img/banner_pic/2b.png" alt="" data_pic="2">
         </div>
         <div class="swiper-slide">
-          <img src="./src/banner_pic/3b.png" alt="" data_pic="3">
+          <img src="./src/img/banner_pic/3b.png" alt="" data_pic="3">
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -179,7 +192,7 @@
     </div>
   </div>
   <div class="footer w">
-    <a href="tencent://message/?uin=2870032794&Site=&Menu=yes"><img src="./src/banner_pic/my_pic.jpg" alt=""
+    <a href="tencent://message/?uin=2870032794&Site=&Menu=yes"><img src="./src/img/banner_pic/my_pic.jpg" alt=""
         title="点击添加好友"></a>
     <p>点我添加好友哇</p>
     <div class="tianchong"></div>
@@ -187,7 +200,6 @@
 
 
   <!-- swiper -->
-  <script src="./js/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
